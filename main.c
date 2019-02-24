@@ -12,7 +12,7 @@ Minimum Specs:  Intel Quad-Core i7
 #include <stdio.h>
 #include <stdlib.h>
 
-void swim();
+void swim(int motion);
 int main() {
     // Happily enjoy it's life.
     int eaten = 0;
@@ -23,15 +23,17 @@ int main() {
         eaten = rand() % 10;
 
         i++;
-        system ("CLS");
+        system ("clear");
     }
 
     // RIP </3
-    printf("\n\n       ...BLEEP!\n\n");
+    printf("\n\n       BLEEP! :(\n\n");
+
+    return 0;
 }
 
 // Function that defines everything of a jellyfish.
-void swim(motion) {
+void swim(int motion) {
     // Print half of jellyfish.
     printf(" ___\n(   )\n ---");
 
